@@ -2,4 +2,4 @@
 
 My first repository on GitHub
 
-I love :coffe: :dog; and :dancer:.
+I love ☕e: :dogs; and :dancer:.
