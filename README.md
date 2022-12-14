@@ -1,151 +1,130 @@
 # HelloWorld
 
-My first repository on GitHub
-
-I love ☕ 🐶 and 💃
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  background-color: purple;
-}
-
-h1 {
-  color: BlanchedAlmond;
-  font-family: arial narrow;
-  text-align: center;
-}
-
-h2 {
-  color: BlanchedAlmond;
-  font-family: arial narrow;
-  text-align: left;
-}
-
-p {
-  color: BlanchedAlmond;
-  font-family: arial narrow;
-  font-size: 20px;
-}
-
-input[type=text] {
-  width: 100%;
+* {
   box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('searchicon.png');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  font-family: arial narrow;
 }
 
-ul {
-  list-style-type: none;
+body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
+}
 
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
   background-color: #333;
 }
 
-li {
+/* Style the navigation bar links */
+.navbar a {
   float: left;
-}
-
-li a {
   display: block;
-  color: BlanchedAlmond;
+  color: white;
   text-align: center;
-  padding: 10px 16px;
-  font-family: arial narrow;
+  padding: 14px 20px;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #333;
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
 }
 
-div.gallery {
-  margin: 15px;
-  border: 1px solid #ccc;
-  float: left;
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
   color: black;
-  background-color: BlanchedAlmond;
-  font-family: arial narrow;
-  width: 200px;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
 }
 
-div.gallery img {
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
   width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
+  padding: 20px;
 }
 </style>
 </head>
 <body>
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li style="float:right"><a class="active" href="#about">About</a></li>
-</ul>
 
-<h1>AB 3 - Webtechnologien</h1>
-
-
-
-<p>Aufgabe 1.2 CSS</p>
-
-<h2>What are you looking for?</h2> 
-
-<form>
-  <input type="text" name="search" placeholder="Search.."> <br><br><br><br><br><br><br>
-  <div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
-    <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Cique Terre</div>
+<div class="header">
+  <h1>My Website</h1>
+  <p>A website created by me.</p>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="img_forest.jpg">
-    <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-  </a>
-  <div class="desc">Forest</div>
+<div class="navbar">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" class="right">Link</a>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="img_lights.jpg">
-    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-  </a>
-  <div class="desc">Northern Lights</div>
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
 </div>
-
-<div class="gallery">
-  <a target="_blank" href="img_mountains.jpg">
-    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-  </a>
-  <div class="desc">Mountains</div>
-</div>
-  
-  
-</form>
-
- 
 
 </body>
 </html>
-
-
